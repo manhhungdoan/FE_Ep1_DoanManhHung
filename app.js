@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    //handle navbar responsive
     $(".nav-mobile, .nav-item, .btn-login, .btn-startnow").click(function () {
         $(".nav, .user-btn").toggleClass("show-menu show-btn")
     });
@@ -13,6 +14,7 @@ $(document).ready(function () {
         }, 1000);
     });
 
+    //handle hover
     $(".btn-startnow, .btn-trial").hover(function () {
         $(this).css("background-color", "#365ca2");
     }, function () {
@@ -35,4 +37,5 @@ $(document).ready(function () {
     }, function () {
         $(this).css("transform", "scale(1)");
     });
+
 });
