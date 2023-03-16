@@ -1,12 +1,16 @@
 $(document).ready(function () {
     //handle navbar responsive
-    $(".nav-mobile, .nav-item, .btn-login, .btn-startnow").click(function () {
-        $(".nav, .user-btn").toggleClass("show-menu show-btn")
+    $(".nav-mobile, .btn-login, .btn-startnow").click(function (e) {
+        $(".nav, .user-btn").toggleClass("show-menu show-btn");
     });
 
+
+    //handle go to top
     $(".logo").click(function () {
         $("html, body").animate({ scrollTop: 0 }, 1000);
     });
+
+    //handle go to section
     $(".nav-features").click(function () {
         var offset = -45; //Offset of -10px
         $('html, body').animate({

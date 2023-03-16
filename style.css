@@ -440,9 +440,9 @@ img {
     }
 
     .header .nav {
-        /* display: none; */
+        display: none;
         position: absolute;
-        top: 86px;
+        top: 82px;
         left: 0;
         flex-direction: column;
         font-size: 18px;
@@ -453,7 +453,6 @@ img {
         padding-top: 5px;
         padding-bottom: 5px;
         gap: 5px;
-        opacity: 0;
         transition: 0.2s ease-out;
     }
 
@@ -467,7 +466,7 @@ img {
     }
 
     .header .show-menu {
-        opacity: 1;
+        display: block;
     }
 
     .header .nav-item {
@@ -475,22 +474,21 @@ img {
     }
 
     .header .user-btn {
-        /* display: none; */
+        display: none;
         text-align: center;
         position: absolute;
-        top: 236px;
+        top: 220px;
         padding-top: 20px;
         padding-bottom: 10px;
         left: 0;
         z-index: 1;
         background-color: #EFF3FF;
         width: 100%;
-        opacity: 0;
         transition: 0.2s ease-out;
     }
 
     .header .show-btn {
-        opacity: 1;
+        display: block;
     }
 
     .header .btn-login {
